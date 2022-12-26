@@ -2,5 +2,6 @@ using ExampleNew
 using Test
 
 @testset "ExampleNew.jl" begin
-    # Write your tests here.
+    @test ExampleNew.greet_your_package_name() == "hello ExampleNew"
+    @test ExampleNew.greet_your_package_name() !="Hello World!"
 end
